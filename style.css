@@ -1,0 +1,472 @@
+
+/*******************************
+    Typography All Style
+ ******************************/
+body{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    text-transform: capitalize;
+}
+li{
+    list-style: none;
+}
+ul{
+    padding: 0;
+    margin: 0;
+}
+h2{
+    font-weight: 800;
+    text-transform: capitalize;
+    color: #000;
+    font-size: 30px;
+    margin: 5px;
+}
+h3{
+    font-weight: 700;
+    color: #000;
+    font-size: 24px;
+    text-transform: capitalize;
+    margin: 5px;
+}
+h5{
+    font-weight: 700;
+    text-transform: capitalize;
+    color: rgb(212, 72, 72);
+    font-size: 16px;
+    margin: 5px;
+}
+p{
+     font-weight: 500;
+     margin: 0;
+     font-size: 14px;
+}
+.btn-success{
+    font-family: 'Poppins', sans-serif;
+    background: orangered;
+    padding: 12px 15px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+}
+.btn-success::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    border-radius: 5px;
+    z-index: -9999;
+    transition: 0.5s;
+}
+.btn-success:hover::before{
+      width: 100%;
+}
+span{
+    color: orange;
+}
+.container{
+    max-width: 80%;
+    margin: auto;
+}
+
+
+ /*******************************
+    Typography All End
+ ******************************/
+
+
+
+
+
+
+
+/*******************************
+    Header Section Start
+ ******************************/
+
+ .header-section{
+     margin-bottom: 100px;
+     margin-top: 40px;
+ }
+.header{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+    grid-column-gap:200px;
+}
+.menu ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+.menu ul li a {
+    color: #4e5457;
+    font-weight: 700;
+}
+.logo a{
+    font-size: 20px;
+    color: #4e5457;
+    font-weight: 900;
+}
+.cart{
+    font-size: 25px;
+}
+
+ /*******************************
+    Header Section End
+ ******************************/
+
+
+
+
+/*******************************
+    Slider Section Start
+ ******************************/
+
+ .slider-section{
+    margin-top: 10px;
+ }
+ .slider-Item{
+     display: grid;
+     grid-template-columns: repeat(2,1fr);
+     grid-column-gap:100px;
+     align-items: center;
+ }
+ .slider-content h2{
+    font-size: 40px;
+     color: #4e5457;
+ }
+ .slider-content p{
+    font-size: 16px;
+    color: gray;
+}
+ .slider-thumbnail img{
+     height: 400px;
+     width: 400px;
+     border:2px solid rgb(240, 240, 240);
+     border-radius: 50%;
+     padding:10px;
+ }
+ .mainContainer{
+     max-width: 85%;
+     margin: auto;
+ }
+ .btn-danger{
+    font-family: 'Poppins', sans-serif;
+    background: orangered;
+    padding: 12px 30px;
+    border: none;
+    font-weight: 700;
+    color: white;
+    border-radius: 50px;
+    margin-top: 10px;
+    cursor: pointer;
+    position: relative;
+    z-index: 9999;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.btn-danger::before{
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #000;
+    border-radius: 50px;
+    z-index: -9999;
+    transition: 0.5s;
+}
+.btn-danger:hover::before{
+      width: 100%;
+}
+.btn-danger i{
+    margin-left: 10px;
+}
+
+ /*******************************
+    Slider Section Start
+ ******************************/
+
+
+
+
+/*******************************
+    Brand Section Start
+ ******************************/
+
+.brand-section{
+    margin-top: 100px;
+}
+.brand-item ul{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    border-top: 2px solid rgb(240, 240, 240);
+    border-bottom: 2px solid rgb(240, 240, 240);
+    padding: 30px 10px;
+}
+
+ /*******************************
+    Brand Section End
+ ******************************/
+
+
+
+
+ /*******************************
+    Product Section Start
+ ******************************/
+
+.product-section{
+    margin: 100px 0px;
+}
+.product-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.productAllItem{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:20px;
+}
+.product-item{
+   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+   border-radius: 10px;
+    padding: 15px;
+}
+.product-item img{
+    width: 100%;
+    display: block;
+    margin:auto;
+}
+.product-item h3{
+    font-weight: 500;
+    margin-top: 15px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+.fullRating{
+    color: orange; 
+}
+.score{
+     margin-left: 10px;
+     font-weight: 900;
+     color: rgb(218, 60, 60);
+}
+.discription{
+    color: gray;
+}
+.seeMore{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+}
+.seeMore a{
+    color: orangered;
+    font-weight: 700;
+}
+.seeMore a:hover{
+    color: #000;
+}
+
+/*******************************
+    Product Section Start
+ ******************************/
+
+
+
+ /*******************************
+    Testimonial Section Start
+ ******************************/
+
+ .testimonial-section{
+    margin-bottom: 120px;
+ }
+ .testimonial{
+     display: grid;
+     grid-template-columns: repeat(3,1fr);
+     grid-column-gap:10px;
+ }
+ .testimonial-title{
+     text-align: center;
+     margin-bottom: 100px;
+ }
+ .testimonial-item{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+ }
+.test-photo img{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top:-50px;
+    margin: auto;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 5px solid rgba(235, 232, 232, 0.979);
+}
+.testimonial-content{
+    margin-top: 70px;
+    padding: 10px;
+    text-align: center;
+}
+.testimonial-content h3{
+    font-size: 16px;
+}
+.testimonial-content p{
+    color: gray;
+}
+
+
+ /*******************************
+    Testimonial Section End
+ ******************************/
+
+
+
+
+ /*******************************
+    Footer Section Start
+ ******************************/
+
+ .footer-section{
+    background:#0A0826;
+    text-align: center;
+    padding: 20px;
+ }
+ 
+ .footer-content h3{
+     color: white;
+ }
+ .copyright,.reserved{
+     color: rgb(179, 174, 174);
+ }
+ .footer-social{
+     max-width: 15%;
+     margin: 25px auto;
+ }
+.footer-social ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-social ul li a {
+    height: 20px;
+    width: 20px;
+    padding: 5px;
+    font-size: 15px;
+    border-radius: 50%;
+    background: #a7afb336;
+    color: white;
+    margin-left: 10px;
+}
+.footer-social ul li a:hover{
+    background: orangered;
+}
+
+/*******************************
+    Footer Section End
+ ******************************/
+
+
+
+
+
+
+/*******************************
+    Media Query Start From Here
+ ******************************/
+ 
+ @media(max-width : 1024px){
+    .header {
+        grid-column-gap:0px;
+    }
+ }
+
+
+
+ @media(max-width : 892px){
+     .header {
+        grid-template-columns:repeat(1,1fr);
+        grid-row-gap:0px;
+    }
+    .logo a{
+        text-align: center;
+        margin:30px 0px;
+        display: block;
+    }
+
+    .slider-Item {
+        grid-template-columns:repeat(1,1fr);
+        grid-column-gap: 0px;
+        grid-row-gap: 5rem;
+    }
+ }
+
+
+
+ @media(max-width : 768px){
+     .brand-item ul{
+         flex-direction: column;
+         
+     }
+     .brand-item ul li a{
+         display: block;
+         margin-top: 25px;
+     }
+     .productAllItem{
+         grid-template-columns:repeat(1,1fr);
+        grid-row-gap:2rem;
+     }
+    .testimonial{
+        grid-template-columns:repeat(1,1fr);
+        grid-row-gap:5rem;
+    }
+}
+
+
+@media(max-width : 480px){
+    .menu ul {
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+    }
+     .menu ul li a{
+         margin-top:15px;
+         display: block;
+     }
+}
+
+/*******************************
+     Media Query End From Here
+ ******************************/
+
+
+
+
+
+
+
+
+
+
